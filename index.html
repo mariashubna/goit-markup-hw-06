@@ -27,9 +27,11 @@
           <a href="./index.html" class="header-logo logo link"
             >Web<span class="logo-span">Studio</span>
           </a>
-            <svg class="menu-icon" width="32" height="22">
-              <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
-            </svg>
+            <button type="button" class="menu-toggle js-open-menu">
+              <svg class="menu-icon" width="32" height="22">
+                <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+              </svg>
+            </button>
           <ul class="header-menu list">
             <li class="header-item">
               <a href="./index.html" class="header-link link opened-page"
@@ -59,6 +61,78 @@
           </ul>
         </address>
       </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-toggle js-close-menu"
+        aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="mob-menu-closed-btn" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-1"></use>
+          </svg>          
+      </button>
+      <div class="mob-wrap">
+        <nav class="mob-menu-nav">
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="mob-menu-link link opened-page"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a href="./portfolio.html" class="mob-menu-link link">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mob-menu-address">
+          <ul class="header-list list">
+            <li class="header-list-item">
+              <a href="mailto:info@devstudio.com" class="header-list-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header-list-item">
+              <a href="tel:+110001111111" class="header-list-link link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="mob-menu-icon-wrap">
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-items">
+              <a href="" class="mob-menu-bg">
+                <svg class="mob-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-inst1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-items">
+              <a href="" class="mob-menu-bg">
+                <svg class="mob-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-items">
+              <a href="" class="mob-menu-bg">
+                <svg class="mob-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-items">
+              <a href="" class="mob-menu-bg">
+                <svg class="mob-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     </header>
     <main>
       <section class="hero">
@@ -389,7 +463,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-wrap container">
         <div class="footer-container">
           <a href="./index.html" class="footer-logo logo link"
@@ -448,7 +522,7 @@
           </form>          
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div data-modal class="modal-wrap is-hidden">
       <div class="modal-content">
         <button type="button" data-modal-close class="modal-closed-btn">
@@ -541,5 +615,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
