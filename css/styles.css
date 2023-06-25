@@ -1172,7 +1172,7 @@ img {
     width: calc((100% - 24px) / 2);
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     margin: 0 auto;
