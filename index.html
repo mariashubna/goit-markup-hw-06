@@ -64,7 +64,7 @@
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button
           type="button"
-          class="closed-btn menu-toggle js-close-menu"
+          class="mob-closed-btn menu-toggle js-close-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
@@ -90,53 +90,55 @@
               </li>
             </ul>
           </nav>
-          <address class="mob-menu-address">
-            <ul class="mob-menu-address-list list">
-              <li class="mob-menu-address-item">
-                <a href="tel:+110001111111" class="header-list-tel link"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-              <li class="mob-menu-address-item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="header-list-email link"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <div class="mob-menu-icon-wrap">
-            <ul class="mob-menu list">
-              <li class="mob-menu-items">
-                <a href="" class="mob-menu-bg">
-                  <svg class="mob-menu-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-inst1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mob-menu-items">
-                <a href="" class="mob-menu-bg">
-                  <svg class="mob-menu-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-twitter1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mob-menu-items">
-                <a href="" class="mob-menu-bg">
-                  <svg class="mob-menu-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-facebook1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="mob-menu-items">
-                <a href="" class="mob-menu-bg">
-                  <svg class="mob-menu-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-linkedin1"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <div class="modal-contact-wrap">
+            <address class="mob-menu-address">
+              <ul class="mob-menu-address-list list">
+                <li class="mob-menu-address-item">
+                  <a href="tel:+110001111111" class="header-list-tel link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-menu-address-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="header-list-email link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="mob-menu-icon-wrap">
+              <ul class="mob-menu list">
+                <li class="mob-menu-items">
+                  <a href="" class="mob-menu-bg">
+                    <svg class="mob-menu-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-inst1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-menu-items">
+                  <a href="" class="mob-menu-bg">
+                    <svg class="mob-menu-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-menu-items">
+                  <a href="" class="mob-menu-bg">
+                    <svg class="mob-menu-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-menu-items">
+                  <a href="" class="mob-menu-bg">
+                    <svg class="mob-menu-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -212,6 +214,7 @@
             <li class="work-item">
               <img
                 class="work-img"
+                srcset="./images/computer.jpg 1x, ./images/computer-2x.jpg 2x"
                 src="./images/computer.jpg"
                 width="360"
                 height="294"
@@ -221,6 +224,7 @@
             <li class="work-item">
               <img
                 class="work-img"
+                srcset="./images/design.jpg 1x, ./images/design-2x.jpg 2x"
                 src="./images/design.jpg"
                 width="360"
                 height="294"
@@ -230,6 +234,10 @@
             <li class="work-item">
               <img
                 class="work-img"
+                srcset="
+                  ./images/smartphone.jpg    1x,
+                  ./images/smartphone-2x.jpg 2x
+                "
                 src="./images/smartphone.jpg"
                 width="360"
                 height="294"
@@ -246,6 +254,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/Guerrero.jpg 1x, ./images/Guerrero-2x.jpg 2x"
                 src="./images/Guerrero.jpg"
                 width="264"
                 height="260"
@@ -289,6 +298,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/Ford.jpg 1x, ./images/Ford-2x.jpg 2x"
                 src="./images/Ford.jpg"
                 width="264"
                 height="260"
@@ -333,6 +343,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/Garcia.jpg 1x, ./images/Garcia-2x.jpg 2x"
                 src="./images/Garcia.jpg"
                 width="264"
                 height="260"
@@ -377,6 +388,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/Wilson.jpg 1x, ./images/Wilson-2x.jpg 2x"
                 src="./images/Wilson.jpg"
                 width="264"
                 height="260"
@@ -543,47 +555,41 @@
             <use href="./images/icons.svg#icon-close-black-1"></use>
           </svg>
         </button>
-        <p class="modal-title">
-          Leave your contacts and we will call you back
-        </p>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="input-wrap">
-            <label for="user-name" class="input-label">
-              Name </label>
-              <div class="modal-input-wrap">
-                <input
-                  name="user-name"
-                  id="user-name"
-                  type="text"
-                  class="modal-input"
-                  required                
-                />
-                <svg class="input-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-name"></use>
-                </svg>
-              </div>
-            
+            <label for="user-name" class="input-label"> Name </label>
+            <div class="modal-input-wrap">
+              <input
+                name="user-name"
+                id="user-name"
+                type="text"
+                class="modal-input"
+                required
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
           </div>
           <div class="input-wrap">
-            <label for="user-tel" class="input-label">
-              Phone </label>
-             <div class="modal-input-wrap">
-               <input
-                 name="user-tel"
-                 id="user-tel"
-                 type="tel"
-                 class="modal-input"
-                 required
-               />
-               <svg class="input-icon" width="18" height="24">
-                 <use href="./images/icons.svg#icon-phone"></use>
-               </svg>
-             </div>
+            <label for="user-tel" class="input-label"> Phone </label>
+            <div class="modal-input-wrap">
+              <input
+                name="user-tel"
+                id="user-tel"
+                type="tel"
+                class="modal-input"
+                required
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="input-wrap">
-           <label for="user-email" class="input-label">
-            Email </label>
-             <div class="modal-input-wrap">
+            <label for="user-email" class="input-label"> Email </label>
+            <div class="modal-input-wrap">
               <input
                 name="user-email"
                 id="user-email"
@@ -593,17 +599,16 @@
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-             </div>
-          </div>          
+            </div>
+          </div>
           <div class="input-wrap textarea-wrap">
-            <label for="user-comment" class="input-label">
-              Comment </label>
-              <textarea
-                class="modal-textarea"
-                id="user-comment"
-                name="user-comment"
-                placeholder="Text input"
-              ></textarea>
+            <label for="user-comment" class="input-label"> Comment </label>
+            <textarea
+              class="modal-textarea"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
           </div>
           <div class="checkbox">
             <input
