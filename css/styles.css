@@ -1308,6 +1308,10 @@ img {
   .footer-container {
     min-width: 264px;
     margin-right: 120px;
+    margin-bottom: 0;
+  }
+  .social-list {
+    margin-bottom: 0;
   }
   .send-wrap {
     margin-left: 80px;
